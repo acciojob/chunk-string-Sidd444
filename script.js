@@ -3,7 +3,7 @@ function stringChop(str,size) {
   let curr=0,arr=[];
   size=parseInt(size);
   while(true){
-	 if(size+curr<str.length){
+	 if(size+curr<=str.length){
 		 arr.push(str.substring(curr,size+curr));
 	     curr=curr+size;
       }else break;
