@@ -1,10 +1,9 @@
 function stringChop(str,size) {
   // your code here
-   let curr=0, arr=[];
-  size=parseInt(size);
-  while(curr<str.length){
-     arr.push(str.substring(curr, Math.min(size+curr, str.length)));
-     curr=curr+size;
+   let arr = [];
+  size = parseInt(size);
+  for(let i = 0; i < str.length; i += size){
+     arr.push(str.substring(i, i + size));
   }
   return arr;
 }
